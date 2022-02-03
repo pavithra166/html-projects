@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Formevents
+        </title>
+        
+    </head>
+    <body>
+        <div class="container">
+        <form>
+            <h1><center>Enter the Details</center></h1>
+            <label for="firstname">Enter firstname:&emsp;&emsp;&emsp;&ensp;</label>
+            <input type="text" id="firstname" placeholder="firstname"  pattern="[A-Za-z]{3,26}"><br><br>
+            <label for="firstname">Enter lastname:&emsp;&emsp;&emsp;&ensp;</label>
+            <input type="text" id="lastname" placeholder="lastname" minlength="3" maxlength="26" pattern="[A-Za-z]{0,26}"><br><br>
+            <label for="gender">Select the Gender &ensp;&emsp;&emsp;</label>
+            <input type="radio" id="gender" value="male">
+            <label for="male">Male</label>&emsp;
+            <input type="radio" id="female" value="female">
+            <label for="female">Female</label><br><br>
+            <label for="dob">Enter DateofBirth:&emsp;&emsp;&nbsp</label>
+            <input type="date" id="dob" name="dob" max="2022-02-10"><br><br>
+            <label for="addr1">Enter AddressLine1:&emsp;&ensp;</label>
+            <input type="text" id="addr1" maxlength="150"><br><br>
+            <label for="addr2">Enter AddressLine2:&emsp;&ensp;</label>
+            <input type="text" id="addr2" maxlength="150"><br><br>
+            <label for="countries">Choose your Country:&ensp;&nbsp;</label>
+            <select id="countries" name="countries"></select><br><br>
+            <label for="mob">Enter the mobileNo &ensp;&emsp;</label>
+            <input type="tel" id="mob" minlength="0" maxlength="9"><br><br>
+            <label for="mail">Enter the email address &nbsp;</label>
+            <input type="email" id="mail"><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <div name="table">
+        <center><h1>Form Details</h1></center>
+        <table border="2">
+            <tr>
+                <th>firstname</th>
+                <th>lastname</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>ContactNo</th>
+                <th>EmailId</th>
+            </tr>
+            <tr>
+                <td>Pavithra</td>
+                <td>Jayapalan</td>
+                <td>16-04-2000</td>
+                <td>Female</td>
+                <td>7639989395</td>
+                <td>pavithra16j@gmail.com</td>
+            </tr>
+
+        </table>
+    </div>
+    <script src="app.js"></script>
+    </body>
+</html>
